@@ -3,112 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sukaina D. Alkhalidy - Resume</title>
+  <title>Sukaina D. Alkhalidy - Resume & Portfolio</title>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <meta name="description" content="Sukaina D. Alkhalidy – Data Scientist with actuarial and machine learning experience. Explore resume, skills, and projects.">
+  <meta name="description" content="Sukaina D. Alkhalidy – Data Science and Statistics student with experience in machine learning, analysis, and research projects. Explore résumé, skills, and projects.">
   <meta name="author" content="Sukaina D. Alkhalidy">
   <meta name="robots" content="index, follow">
+
   <style>
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f7fa;
       color: #333;
       max-width: 900px;
       margin: auto;
-      padding: 30px;
-      line-height: 1.6;
+      padding: 20px;
+      line-height: 1.7;
     }
-    header, footer {
-      text-align: center;
-      background-color: #eef2f5;
-      padding: 30px 20px 20px 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-    h1 { margin-bottom: 10px; }
-    h2 {
-      color: #2a2a2a;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 4px;
-      margin-top: 30px;
-    }
-    h3 { margin-top: 20px; color: #444; }
-    ul { padding-left: 20px; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .download-button {
-      display: inline-block;
-      background-color: #007acc;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .download-button:hover {
-      background-color: #005f99;
-    }
-    .profile-pic {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
+
+    /* Navigation */
     nav {
       background-color: #007acc;
-      padding: 10px 0;
+      padding: 12px 0;
       border-radius: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
     .navbar {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 35px;
       list-style: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
     .navbar li a {
       color: white;
       font-weight: bold;
+      text-decoration: none;
     }
     .navbar li a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
-      body { padding: 15px; }
-      .navbar { flex-direction: column; gap: 10px; }
-      .profile-pic { width: 100px; height: 100px; }
-      .download-button {
-        width: 100%;
-        display: block;
-        margin-top: 15px;
-      }
+
+    /* Header */
+    header {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      margin-bottom: 25px;
     }
-    section { margin-bottom: 40px; }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 28px;
+      color: #222;
+    }
+
+    /* Sections */
+    section {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+      margin-bottom: 35px;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 18px;
+      color: #222;
+    }
+    ul { padding-left: 18px; }
+
+    /* Resume Area */
     #resume-preview {
-      background-color: #fff;
-      padding: 30px 20px;
-      border-radius: 10px;
-      margin-bottom: 40px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       text-align: center;
     }
+    .download-button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .download-button:hover { background-color: #005f99; }
+
     .pdf-container {
-      margin-top: 20px;
-      border: 1px solid #ccc;
+      margin-top: 22px;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .navbar { flex-direction: column; gap: 12px; }
+      .profile-pic { width: 110px; height: 110px; }
+      .download-button { width: 100%; margin-top: 15px; }
     }
   </style>
 </head>
+
 <body>
+
+  <!-- Navigation -->
   <nav aria-label="Main navigation">
     <ul class="navbar">
       <li><a href="#about">About Me</a></li>
@@ -118,66 +132,66 @@
     </ul>
   </nav>
 
+  <!-- Header -->
   <header>
     <img src="profile.jpg" alt="Portrait of Sukaina D. Alkhalidy" class="profile-pic">
     <h1>Sukaina D. Alkhalidy</h1>
-    <p>U.S. Citizen | +1 (517) 706-1081 | 
-      <a href="mailto:alkhal13@msu.edu">alkhal13@msu.edu</a> | 
-      <a href="https://www.linkedin.com/in/sukainaalkhalidy" target="_blank">LinkedIn</a> | 
+    <p>
+      U.S. Citizen | +1 (517) 706-1081 | 
+      <a href="mailto:alkhal13@msu.edu">alkhal13@msu.edu</a> |
+      <a href="https://www.linkedin.com/in/sukainaalkhalidy" target="_blank">LinkedIn</a> |
       <a href="https://github.com/sukaina13" target="_blank">GitHub</a>
     </p>
-    <p><strong>Education:</strong> Michigan State University – B.S. in Data Science & Statistics, Graduating 2026</p>
+    <p><strong>Education:</strong> Michigan State University — B.S. in Data Science & Statistics (Expected 2026)</p>
   </header>
 
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm <strong>Sukaina D. Alkhalidy</strong>, a driven and analytical student double majoring in <strong>Data Science and Statistics</strong> at Michigan State University. I enjoy applying statistical methods and machine learning to solve real-world problems and derive actionable insights from complex data.</p>
-    <p>I’ve led and collaborated on projects involving neural spike data classification, wildfire modeling, and economic trend analysis during the COVID-19 pandemic. Whether it's wrangling messy data or building interpretable models, I bring clarity and curiosity to every step of the data pipeline.</p>
-    <p>I'm also actively preparing for a career in Data Science and Statistics by building my skills through hands-on coursework and professional certifications. I thrive in fast-paced, detail-oriented environments where critical thinking and communication make a difference.</p>
-    <p>Beyond academics, I'm a continuous learner who values clear communication, collaborative teamwork, and making data meaningful.</p>
+    <p>Hello! I'm <strong>Sukaina D. Alkhalidy</strong>, a dedicated student double majoring in <strong>Data Science</strong> and <strong>Statistics</strong> at Michigan State University. I enjoy using statistical modeling and machine learning to uncover insights from complex datasets.</p>
+    <p>I’ve worked on projects involving wildfire prediction, economic impact analysis, neural spike classification, and large-scale NYC taxi data modeling. I love building interpretable, well-structured models and communicating results clearly.</p>
+    <p>I thrive in detail-oriented, analytical environments where problem-solving and critical thinking matter.</p>
   </section>
 
-  <main>
-    <section id="experience">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>NYC Yellow Taxi Fare Analysis (Spring 2025):</strong> 
-          Analyzed over 6.9 million NYC yellow taxi records to uncover factors influencing fare pricing. 
-          Applied multiple linear regression, ANOVA, and two-way ANOVA to study the impact of trip distance, duration, day of the week, and time of day. 
-          Found that trip distance had the strongest effect on fare, and that weekend night fares were unexpectedly the lowest. 
-          <a href="Taxi_Report_Basic.pdf" target="_blank">View Report</a>
-        </li>
-        <li><strong>Face Identity Classification – CMSE381 Project:</strong> 
-          Built classifiers on Freiwald-Tsao neural spike data to predict face identity based on macaque AM responses using Python. 
-        </li>
-        <li><strong>Heart Hypertension Calculator – SpartaHack X (Feb 2025):</strong> 
-          Developed a Python-based logistic regression tool that estimates hypertension risk based on Age, BMI, and Cholesterol. Built a user-friendly GUI and collaborated via GitHub, ChatGPT, and Copilot.
-        </li>
-        <li><strong>COVID-19 Impact Analysis:</strong> Analyzed real GDP and employment data across U.S. states during the pandemic using time-series and regression modeling.</li>
-        <li><strong>Wildfire Spread Prediction:</strong> Modeled wildfire spread in Portugal using temperature and humidity data via SVM and linear regression.</li>
-      </ul>
-    </section>
+  <!-- Projects -->
+  <section id="experience">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>NYC Yellow Taxi Fare Analysis (2025):</strong> Analyzed 6.9M+ taxi records using regression modeling and ANOVA. Identified key fare predictors such as distance, time of day, and trip duration. 
+        <a href="Taxi_Report_Basic.pdf" target="_blank">View Report</a>
+      </li>
+      <li><strong>Face Identity Classification (CMSE 381):</strong> Built Python classifiers for macaque neural spike data (Freiwald & Tsao dataset) achieving ~70–80% accuracy.</li>
+      <li><strong>Heart Hypertension Calculator (SpartaHack X):</strong> Developed a GUI-based logistic regression tool to estimate hypertension risk using age, BMI, and cholesterol.</li>
+      <li><strong>COVID-19 Economic Impact Analysis:</strong> Modeled U.S. GDP and employment changes pre- and post-pandemic using regression and time-series methods.</li>
+      <li><strong>Wildfire Spread Prediction:</strong> Used SVM and linear regression to model fire spread in Portugal based on humidity and temperature.</li>
+    </ul>
+  </section>
 
-    <section id="certs">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Advanced Python: Working with Databases | LinkedIn</li>
-      </ul>
-    </section>
+  <!-- Certifications -->
+  <section id="certs">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Advanced Python: Working with Databases — LinkedIn Learning</li>
+    </ul>
+  </section>
 
-    <section id="resume-preview">
-      <h2>Resume</h2>
-      <p>
-        📄 <a href="resume.pdf" download class="download-button">Download PDF Here</a>
-      </p>
-      <div class="pdf-container">
-        <embed src="resume.pdf" type="application/pdf" width="100%" height="700px" />
-      </div>
-    </section>
-  </main>
+  <!-- Resume -->
+  <section id="resume-preview">
+    <h2>Resume</h2>
 
-  <footer>
+    <p>
+      📄 <a href="resume.pdf?v=3" download class="download-button">Download PDF Here</a>
+    </p>
+
+    <div class="pdf-container">
+      <embed src="resume.pdf?v=3" type="application/pdf" width="100%" height="700px" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding: 20px 10px; margin-top:20px;">
     <p>© 2025 Sukaina D. Alkhalidy</p>
   </footer>
+
 </body>
 </html>
